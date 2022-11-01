@@ -1,141 +1,61 @@
 * {
   box-sizing: border-box;
 }
-
-.main-nav {
-  background-color: #43281c;
-  color: #fbf2c0;
-  display: flex;
-  font-weight: normal;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-}
-
-.logo {
-  height: 25px;
-  position: relative;
-  top: 3px;
-}
-
-.page {
-  display: grid;
-  row-gap: 30px;
-  column-gap: 30px;
-  width: 100%;
-  padding: 30px;
-  margin: 0 auto;
-  grid-template-areas:
-    "order payment"
-    "total total";
-  grid-template-columns: 1fr 1fr;
-}
-
-.box {
-  background-color: #eee1d5;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
-  padding: 15px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.box-title {
-  color: #885a2d;
-  font-weight: normal;
-  font-size: 16px;
-}
-.items {
-  list-style: none;
+body {
   padding: 0;
   margin: 0;
 }
-.item {
-  border-bottom: 2px solid #ddb892;
-  display: grid;
-  padding: 10px 0;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas:
-    "quantity title price"
-    "quantity options price";
-  row-gap: 8px;
-}
-.item-quantity {
-  grid-area: quantity;
-}
-.item-title {
-  grid-area: title;
-  font-weight: bold;
-}
-.item-price {
-  grid-area: price;
-  font-weight: bold;
-}
 
-.item-options-list {
-  grid-area: options;
-  color: #b08968;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
+.calc {
+  background-color: #000;
+  color: #fff;
+  width: 400px;
 }
-
-.item-option {
-  margin-bottom: 5px;
-}
-.user-input-label {
-  color: #885a2d;
-  background-color: #eee1d5;
-  font-size: 11px;
-  position: absolute;
-  left: 25px;
-  top: -7px;
-  padding: 0 2px;
-}
-
-.user-input {
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px #885a2d solid;
-  padding: 8px;
-  border-radius: 100px;
-  width: 100%;
-  text-indent: 18px;
-  font-size: 18px;
-}
-.input-group {
-  position: relative;
-  margin-bottom: 20px;
-}
-.short-input {
-  max-width: 200px;
-}
-.total {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.totals-table {
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 30px;
-}
-.totals-table td {
-  padding: 10px;
-}
-.totals-table td:last-child {
+.screen {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
   text-align: right;
+  padding: 20px 5px;
 }
-.final-totals {
-  font-weight: bold;
-}
-.checkout {
-  background-color: #deb993;
+.calc-button {
+  background-color: #d8d9db;
+  color: #000;
+  height: 100px;
+  width: 24.5%;
   border: none;
-  padding: 10px 30px;
-  width: 100%;
-  border-radius: 100px;
-  font-size: 16px;
+  border-radius: 0;
+  font-size: 40px;
+  cursor: pointer;
+}
+.calc-button:hover {
+  background-color: #ebebeb;
+}
+.calc-button:active {
+  background-color: #bbbcbe;
+}
+.double {
+  width: 49.7%;
+}
+.triple {
+  width: 74.8%;
+}
+.calc-button:last-child {
+  background-color: #df974c;
+  color: #fff;
+}
+.calc-button:last-child:hover {
+  background-color: #dfb07e;
+}
+.calc-button:last-child:active {
+  background-color: #dd8d37;
+}
+.calc-button-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+.calc-button-row:last-child {
+  padding-bottom: 0;
 }
